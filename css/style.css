@@ -1,0 +1,511 @@
+/*** font ***/
+
+@font-face {
+    font-family: 'Wasted';
+    src: url('../fonts/Wasted.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geo sans light';
+    src: url('../fonts/GeosansLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geo sans light italic';
+    src: url('../fonts/GeosansLight-Oblique.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Caviar dreams';
+    src: url('../fonts/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar dreams bold';
+    src: url('../fonts/CaviarDreams_Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar dreams italic';
+    src: url('../fonts/CaviarDreams_Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Caviar dreams bold italic';
+    src: url('../fonts/CaviarDreams_BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*** font slut ***/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+html {
+    background: url("../img/stripe.png") no-repeat scroll top / 100% 5px, rgba(0, 0, 0, 0.02);
+}
+
+body {
+    font-family: 'Caviar dreams';
+    padding-bottom: 120px;
+}
+abbr {
+    cursor: pointer;
+}
+p {
+    font: normal 16px/180% 'Caviar dreams bold', sans-serif;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+}
+h3 {
+    font: normal 24px/190% 'Caviar dreams bold', sans-serif;
+}
+a {
+    color: rgba(0, 187, 255, 1);
+}
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-flow: column;
+}
+.intro {
+    width: 100%;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-flow: column;
+}
+/*** babyblå bakgrund på headern ***/
+header {
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 1;
+    height: 230px;
+    margin: 15px;
+    background-color: rgba(0, 187, 255, 1);
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px 0 #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: -2px 3px 2px #000;
+    font: 70px/180% 'Caviar dreams bold italic', Verdana, Futura, sans-serif;
+    margin-top: 60px;
+}
+
+.intro header h2 {
+    color: rgba(0, 0, 0, 0);
+}
+/* The Road to Enlightenment */
+.preamble { 
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    box-shadow: 1px 2px 2px 0 #333;
+    border-radius: 4px;
+    columns: 3;
+    column-rule-width: 10px;
+    order: 1;
+    width: 70%;
+    margin: 20px 0 20px 15%;
+    padding: 3%;
+    font-style: italic;
+    color: rgba(0, 0, 0, .7);
+}
+
+
+.preamble p {
+    width: 50%;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.preamble::after {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    content: url("../img/css3.png");
+}
+
+.summary {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 2px 2px 0 #333;
+    border-radius: 4px;
+    order: 2;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    width: 70%;
+    flex-flow: column-reverse;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.summary p:first-child {
+    border-radius: 4px;
+    margin-top: 40px;
+    padding: 10px;
+    font: italic 22px/150% 'Caviar dreams italic', sans-serif;
+}
+
+.summary p:last-child {
+    flex-grow: 0;
+    padding: 10px;
+    font: bold italic 48px/150% Wasted, Futura, sans-serif;
+    color: rgba(100, 100, 100, 1);
+}
+.summary p:first-child::after {
+    content: " (\"Select a Design:\" below)";
+    display: block;
+    opacity: .5;
+}
+.summary a {
+    color: rgba(0, 187, 255, 1);
+}
+
+/*** länkar ***/
+aside {
+    width: 100%;
+    order: 1;
+    margin-bottom: 20px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 2px 2px 0 #333;
+    border-radius: 50%;
+    margin-left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 24px;
+    line-height: 2;
+}
+/*** innanför aside .sidebar ***/
+.wrapper {
+    width: 100%;
+}
+
+.wrapper div {
+    float: left;
+    text-align: center;
+}
+.wrapper div:nth-child(2), .wrapper div:nth-child(3) {
+    width: 40%;
+    margin: 5%;
+}
+.wrapper div ul {
+    list-style: none;
+}
+
+.wrapper div ul li a {
+    color: rgba(0, 187, 255, 1);
+}
+/*** innanför .wrapper => aside .sidebar ***/
+.design-selection {
+    width: 100%;
+}
+/* första blocket */
+.main {
+    order: 2;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-flow: column;
+}
+
+
+
+.main {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 3px 0 #333;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    padding: 5%;
+}
+.explanation p, .participation p, .benefits p, .requirements p, .preamble p {
+    padding-left: 20px;
+}
+.explanation {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.participation {
+    padding: 10px;
+    order: 1;
+    width: 100%;
+    /* margin: 0 auto; */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.benefits {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+     margin-bottom: 20px;
+    padding: 10px;
+    order: 2;
+    width: 50%;
+    line-height: 2;
+    font: italic 18px/2 'Caviar dreams bold', sans-serif;
+}
+
+.benefits::after {
+    content: url("../img/thumbs-up.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 400px 400px;
+    position: absolute;
+    right: -310px;
+    top: 60px;
+}
+
+
+.zen-validate-html::after,
+.zen-validate-css::after,
+.zen-license::after,
+.zen-accessibility::after,
+.zen-github::after {
+    content: "★";
+    color: orangered;
+    margin-top: 4px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+
+.requirements {
+    padding: 10px;
+    order: 5;
+    margin-bottom: 50px;
+}
+
+/*** By Dave Shea etc. ***/
+p[role=contentinfo] {
+    text-align: center;
+    margin-top: 120px;
+    font: italic 32px/190% Wasted, Futura, sans-serif;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+p[role=contentinfo] a {
+    color: rgba(0, 187, 255, 1);
+}
+
+p[role=contentinfo] a:first-child {
+    color: red;
+}
+
+/*** länkar fixerade på botten av sidan ***/
+footer {
+    position: fixed;
+    bottom: 13px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-right: 45px;
+    opacity: .4;
+}
+footer:hover {
+    opacity: 1;
+}
+
+footer a {
+    font: bold 24px/2 "Caviar dreams", Futura, sans-serif;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    color: rgba(0, 187, 255, 1);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/*** stripe på botten av sidan ***/
+.extra1 {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    background: url("../img/stripe.png") no-repeat fixed bottom / 100% 5px;
+    opacity: .5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*** media queries - många... ***/
+
+@media only screen and (max-width:1230px) {
+    header h1 {
+        margin-top: 50px;
+    }
+    aside {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .summary, .main, .preamble {
+        margin-left: 11%;
+        width: 78%;
+    }
+    .summary p:last-child {
+        margin-top: 10px;
+        font-size: 32px;
+    }
+
+}
+
+@media only screen and (max-width:1064px) {
+    header {
+        height: 220px;
+    }
+    .preamble p {
+        margin-top: 30px;
+    }
+    .preamble::after {
+        width:30%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    p {
+        font-size: 90%;
+    }
+    .intro header {
+        height: 170px;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 20px;
+        background-position: 50% 10px;
+    }
+    header h1 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    aside {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .summary p:last-child {
+        padding-left: 0;
+    }
+    .summary p {
+        width: 70%;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+    .benefits::after {
+        right: -190px;
+        top: 200px;
+    }
+    .preamble p:nth-child(4) {
+        margin-top: 20px;
+    }
+    .preamble::after {
+        
+    }
+    p[role=contentinfo] {
+        display: flex;
+        flex-flow: column;
+    }
+
+    p[role=contentinfo] {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .intro header {
+        font-size: 32px;
+    }
+    p[role=contentinfo] {
+        font-family: "Cavia dreams";
+    }
+}
+@media only screen and (max-width:500px) {
+    .intro header {
+        height: 130px;
+        padding-left: 0;
+        padding-top: 0;
+        font-size: 24px;
+    }
+    .summary {
+        padding: 10px;
+    }
+    .summary p:first-child {
+        font-size: 18px;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    aside {
+        border-radius: 10%;
+        margin-bottom: 50px;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .summary p {}
+    .benefits, .preamble p {
+        width: 100%;
+    }
+    .benefits::after, .preamble::after {
+        content: none;
+    }
+    footer a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .intro header {
+        background-size: 90px;
+        height: 150px;
+    }
+
+    .intro header h1 {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .intro header {
+        padding-top: 100px;
+    }
+}
