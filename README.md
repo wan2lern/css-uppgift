@@ -1,5 +1,5 @@
 # Uppgift 2 CSS - Tanken bakom designen
-### Av Daniel Karjanlahti 2015-12-20-22:00
+###### Av Daniel Karjanlahti 2015-12-20-22:00
 
 ##Svårigheter
 Den största tiden gick åt till att tweaka header delen, och då framförallt media queries. Jag ville skapa en flat design, en enkel och clean design. Den största utmaningen var HTML uppmärkningen, den var så rörig och i helt fel ordning (om man läser innehållet). Jag tar upp det här längre ner i DOM träd avsnittet längre ner.
