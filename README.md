@@ -32,7 +32,7 @@ DOM träd
 Min uppfattning var att HTML-koden var så rörigt att jag var tvungen att göra ett DOM-träd av det.
 Det fungerar så här; Ju högre siffra, desto djupare in i DOM är det. Man får också en snabb överblick av vilka element som finns i vilken wrapper. Jag gjorde också huvudrubrikerna större så att man lätt ser dom.
 
-// DOM
+
 0 body
 1 div .page-wrapper
 	2 section .intro
@@ -146,5 +146,4 @@ Det fungerar så här; Ju högre siffra, desto djupare in i DOM är det. Man få
 0 div .extra4 role[presentation]
 0 div .extra5 role[presentation]
 0 div .extra6 role[presentation]
-</code>
-// slut DOM
+
